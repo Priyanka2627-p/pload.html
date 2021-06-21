@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .circle {
+            margin: 70px auto;
+            width: 100px;
+            height: 100px;
+            border: 5px solid hotpink;
+            border-radius: 50%;
+            border-top-color: lavenderblush;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .container {
+            width: 100px;
+            margin: 70px auto;
+        }
+        
+        .dot {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        
+        .dot1 {
+            background-color: mediumorchid;
+            animation: jump-up 0.6s 0.1s linear infinite;
+        }
+        
+        .dot2 {
+            background-color: magenta;
+            animation: jump-up 0.6s 0.3s linear infinite;
+        }
+        
+        .dot3 {
+            background-color: mediumvioletred;
+            animation: jump-up 0.6s 0.5s linear infinite;
+        }
+        
+        @keyframes jump-up {
+            50% {
+                transform: translate(0, 15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cicle"></div>
+    <div class="container">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+    </div>
+
+</body>
+
+</html>
